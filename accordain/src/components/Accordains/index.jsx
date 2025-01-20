@@ -1,7 +1,3 @@
-
-//single selection
-//multiple selection
-
 import { useState } from "react";
 import data from "./data";
 import "./style.css";
