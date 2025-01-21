@@ -9,6 +9,16 @@ export default function RandomColor() {
     return Math.floor(Math.random() * length);
   }
 
+  const buttonStyle = {
+    backgroundColor: '#172546',
+    color: 'white',
+    padding: '10px 20px',
+    margin: '10px',
+    border: 'none',
+    borderRadius: '5px',
+    cursor: 'pointer',
+  };
+
   function handleCreateRandomHexColor() {
     // #678765
     const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
@@ -42,15 +52,16 @@ export default function RandomColor() {
         background: color,
       }}
     >
-      <button onClick={() => setTypeOfColor("hex")}>Create HEX Color</button>
-      <button onClick={() => setTypeOfColor("rgb")}>Create RGB Color</button>
+      <button onClick={() => setTypeOfColor("hex")} style={buttonStyle}>Create HEX Color</button>
+      <button onClick={() => setTypeOfColor("rgb")} style={buttonStyle}>Create RGB Color</button>
       <button
         onClick={
           typeOfColor === "hex"
             ? handleCreateRandomHexColor
             : handleCreateRandomRgbColor
-        }
+        } style={buttonStyle}
       >
+        
         Generate Random Color
       </button>
       <div
