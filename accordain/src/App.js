@@ -21,7 +21,7 @@ function App() {
       <LoadMoreData />
       {/* Tree view component/menu UI component / recursive navigation menu */}
       {/* <TreeView menus={menus} /> */}
-      <TreeView  />
+      <TreeView />
     </div>
   );
 }
