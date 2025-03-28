@@ -10,18 +10,18 @@ import TreeView from "./components/tree-veiw ";
 function App() {
   return (
     <div className="App">
-      <Accordian />
+      {/* <Accordian />
       <RandomColor />
       <StarRating />
       <ImageSlider
         url={"https://picsum.photos/v2/list"}
         page={"1"}
         limit={"10"}
-      />
-      <LoadMoreData />
+      /> */}
+      {/* <LoadMoreData /> */}
       {/* Tree view component/menu UI component / recursive navigation menu */}
       {/* <TreeView menus={menus} /> */}
-      {/* <TreeView /> */}
+      <TreeView />
     </div>
   );
 }
